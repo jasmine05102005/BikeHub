@@ -1,0 +1,491 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$dummy$dummy",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Admin",
+      "last_name": "User",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$dummy$dummy",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user@example.com",
+      "first_name": "Test",
+      "last_name": "User",
+      "email": "user@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.brand",
+    "pk": 1,
+    "fields": {
+      "name": "Honda",
+      "logo": null,
+      "description": "Leading motorcycle manufacturer known for reliability and performance",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.brand",
+    "pk": 2,
+    "fields": {
+      "name": "Yamaha",
+      "logo": null,
+      "description": "Japanese motorcycle brand famous for sport bikes and reliability",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.brand",
+    "pk": 3,
+    "fields": {
+      "name": "Bajaj",
+      "logo": null,
+      "description": "Indian motorcycle manufacturer with focus on commuter bikes",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.brand",
+    "pk": 4,
+    "fields": {
+      "name": "TVS",
+      "logo": null,
+      "description": "Indian two-wheeler manufacturer known for innovation and quality",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.brand",
+    "pk": 5,
+    "fields": {
+      "name": "Royal Enfield",
+      "logo": null,
+      "description": "Classic motorcycle brand known for cruiser and adventure bikes",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.brand",
+    "pk": 6,
+    "fields": {
+      "name": "Ola Electric",
+      "logo": null,
+      "description": "Electric vehicle manufacturer focused on sustainable mobility",
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bike",
+    "pk": 1,
+    "fields": {
+      "brand": 1,
+      "model_name": "Honda Activa 6G",
+      "year": 2024,
+      "price": "75000.00",
+      "fuel_type": "petrol",
+      "engine_capacity": 109,
+      "mileage": "60.00",
+      "condition": "new",
+      "description": "The Honda Activa 6G is a reliable and fuel-efficient scooter perfect for daily commuting.",
+      "specifications": {
+        "engine": "109cc air-cooled",
+        "power": "8.31 PS @ 7000 rpm",
+        "torque": "8.79 Nm @ 5500 rpm",
+        "brakes": "Drum brakes front and rear",
+        "suspension": "Telescopic front, spring loaded hydraulic rear",
+        "tyres": "90/90-12 front, 90/100-10 rear"
+      },
+      "features": ["LED Headlight", "Digital Speedometer", "External Fuel Filler", "Mobile Charging Port"],
+      "main_image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "images": [
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+        "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500"
+      ],
+      "is_featured": true,
+      "is_trending": true,
+      "stock_quantity": 10,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bike",
+    "pk": 2,
+    "fields": {
+      "brand": 2,
+      "model_name": "Yamaha R15 V4",
+      "year": 2024,
+      "price": "180000.00",
+      "fuel_type": "petrol",
+      "engine_capacity": 155,
+      "mileage": "45.00",
+      "condition": "new",
+      "description": "The Yamaha R15 V4 is a sport bike with aggressive styling and excellent performance.",
+      "specifications": {
+        "engine": "155cc liquid-cooled",
+        "power": "18.4 PS @ 10000 rpm",
+        "torque": "14.2 Nm @ 7500 rpm",
+        "brakes": "Disc brakes front and rear with ABS",
+        "suspension": "Telescopic front, linked type monoshock rear",
+        "tyres": "100/80-17 front, 140/70-17 rear"
+      },
+      "features": ["LED Headlight", "Digital Instrument Cluster", "Slipper Clutch", "Traction Control"],
+      "main_image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "images": [
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+        "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500"
+      ],
+      "is_featured": true,
+      "is_trending": false,
+      "stock_quantity": 5,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bike",
+    "pk": 3,
+    "fields": {
+      "brand": 3,
+      "model_name": "Bajaj Pulsar NS200",
+      "year": 2024,
+      "price": "140000.00",
+      "fuel_type": "petrol",
+      "engine_capacity": 200,
+      "mileage": "40.00",
+      "condition": "new",
+      "description": "The Bajaj Pulsar NS200 offers great value with its powerful engine and sporty design.",
+      "specifications": {
+        "engine": "200cc air-cooled",
+        "power": "24.5 PS @ 9750 rpm",
+        "torque": "18.5 Nm @ 8000 rpm",
+        "brakes": "Disc brakes front and rear with ABS",
+        "suspension": "Telescopic front, monoshock rear",
+        "tyres": "100/80-17 front, 130/70-17 rear"
+      },
+      "features": ["LED Headlight", "Digital Display", "Slipper Clutch", "Nitrox Suspension"],
+      "main_image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "images": [
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+        "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500"
+      ],
+      "is_featured": false,
+      "is_trending": true,
+      "stock_quantity": 8,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bike",
+    "pk": 4,
+    "fields": {
+      "brand": 4,
+      "model_name": "TVS Apache RTR 160 4V",
+      "year": 2024,
+      "price": "120000.00",
+      "fuel_type": "petrol",
+      "engine_capacity": 160,
+      "mileage": "45.00",
+      "condition": "new",
+      "description": "The TVS Apache RTR 160 4V is a sporty commuter bike with excellent performance.",
+      "specifications": {
+        "engine": "160cc air-cooled",
+        "power": "16.5 PS @ 8000 rpm",
+        "torque": "14.8 Nm @ 6500 rpm",
+        "brakes": "Disc brakes front and rear with ABS",
+        "suspension": "Telescopic front, monoshock rear",
+        "tyres": "100/80-17 front, 130/70-17 rear"
+      },
+      "features": ["LED Headlight", "Digital Display", "Glide Through Technology", "Race Tuned Exhaust"],
+      "main_image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "images": [
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+        "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500"
+      ],
+      "is_featured": true,
+      "is_trending": false,
+      "stock_quantity": 12,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bike",
+    "pk": 5,
+    "fields": {
+      "brand": 5,
+      "model_name": "Royal Enfield Classic 350",
+      "year": 2024,
+      "price": "200000.00",
+      "fuel_type": "petrol",
+      "engine_capacity": 349,
+      "mileage": "35.00",
+      "condition": "new",
+      "description": "The Royal Enfield Classic 350 is a timeless cruiser with classic design and thumping engine.",
+      "specifications": {
+        "engine": "349cc air-cooled",
+        "power": "20.2 PS @ 6100 rpm",
+        "torque": "27 Nm @ 4000 rpm",
+        "brakes": "Disc brakes front and rear with ABS",
+        "suspension": "Telescopic front, twin shock absorbers rear",
+        "tyres": "100/90-19 front, 120/80-18 rear"
+      },
+      "features": ["LED Headlight", "Digital Display", "Tripper Navigation", "Classic Design"],
+      "main_image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "images": [
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+        "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500"
+      ],
+      "is_featured": true,
+      "is_trending": true,
+      "stock_quantity": 6,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.bike",
+    "pk": 6,
+    "fields": {
+      "brand": 6,
+      "model_name": "Ola S1 Pro",
+      "year": 2024,
+      "price": "130000.00",
+      "fuel_type": "electric",
+      "engine_capacity": 0,
+      "mileage": "180.00",
+      "condition": "new",
+      "description": "The Ola S1 Pro is an electric scooter with advanced features and long range.",
+      "specifications": {
+        "motor": "8.5 kW peak power",
+        "battery": "4kWh lithium-ion",
+        "range": "180 km per charge",
+        "top_speed": "116 km/h",
+        "charging_time": "4.5 hours",
+        "tyres": "110/70-12 front, 110/70-12 rear"
+      },
+      "features": ["7-inch Touchscreen", "Voice Commands", "GPS Navigation", "Remote Diagnostics"],
+      "main_image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "images": [
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+        "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500"
+      ],
+      "is_featured": true,
+      "is_trending": true,
+      "stock_quantity": 15,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.showroom",
+    "pk": 1,
+    "fields": {
+      "name": "Honda Showroom - Mumbai Central",
+      "address": "123, MG Road, Mumbai Central",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400008",
+      "phone": "+91-9876543210",
+      "email": "mumbai@honda.com",
+      "latitude": "19.0760",
+      "longitude": "72.8777",
+      "brands": [1],
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.showroom",
+    "pk": 2,
+    "fields": {
+      "name": "Yamaha Showroom - Delhi",
+      "address": "456, Connaught Place, New Delhi",
+      "city": "Delhi",
+      "state": "Delhi",
+      "pincode": "110001",
+      "phone": "+91-9876543211",
+      "email": "delhi@yamaha.com",
+      "latitude": "28.6139",
+      "longitude": "77.2090",
+      "brands": [2],
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.showroom",
+    "pk": 3,
+    "fields": {
+      "name": "Multi-Brand Showroom - Bangalore",
+      "address": "789, Brigade Road, Bangalore",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "pincode": "560001",
+      "phone": "+91-9876543212",
+      "email": "bangalore@multibrand.com",
+      "latitude": "12.9716",
+      "longitude": "77.5946",
+      "brands": [1, 2, 3, 4, 5, 6],
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.testride",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "bike": 1,
+      "showroom": 1,
+      "preferred_date": "2024-01-15",
+      "preferred_time": "14:00:00",
+      "status": "confirmed",
+      "notes": "Interested in Activa for daily commute",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.testride",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "bike": 2,
+      "showroom": 2,
+      "preferred_date": "2024-01-20",
+      "preferred_time": "16:00:00",
+      "status": "pending",
+      "notes": "Looking for a sport bike",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.review",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "bike": 1,
+      "rating": 5,
+      "title": "Excellent scooter for daily use",
+      "comment": "The Activa 6G is perfect for city commuting. Great mileage and comfortable ride.",
+      "is_verified_purchase": true,
+      "helpful_votes": 8,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.review",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "bike": 2,
+      "rating": 4,
+      "title": "Great sport bike",
+      "comment": "The R15 V4 has excellent performance and handling. Perfect for enthusiasts.",
+      "is_verified_purchase": false,
+      "helpful_votes": 5,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.favorite",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "bike": 1,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.favorite",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "bike": 5,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.notification",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "type": "test_ride_confirmed",
+      "title": "Test Ride Confirmed",
+      "message": "Your test ride for Honda Activa 6G has been confirmed for 15th January at 2:00 PM",
+      "is_read": false,
+      "related_bike": 1,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.notification",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "type": "price_drop",
+      "title": "Price Drop Alert",
+      "message": "The price of Royal Enfield Classic 350 has dropped by ₹5,000",
+      "is_read": false,
+      "related_bike": 5,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.upcominglaunch",
+    "pk": 1,
+    "fields": {
+      "brand": 1,
+      "model_name": "Honda CB350RS",
+      "expected_price_min": "200000.00",
+      "expected_price_max": "220000.00",
+      "expected_launch_date": "2024-06-01",
+      "description": "The new Honda CB350RS is expected to be a modern classic with retro styling and modern technology.",
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "features": ["Retro Design", "Modern Engine", "LED Lighting", "Digital Display"],
+      "is_featured": true,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.upcominglaunch",
+    "pk": 2,
+    "fields": {
+      "brand": 6,
+      "model_name": "Ola S2",
+      "expected_price_min": "100000.00",
+      "expected_price_max": "120000.00",
+      "expected_launch_date": "2024-04-01",
+      "description": "The Ola S2 is expected to be a more affordable electric scooter with good range and features.",
+      "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500",
+      "features": ["Long Range", "Fast Charging", "Smart Features", "Affordable Price"],
+      "is_featured": true,
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  }
+]
